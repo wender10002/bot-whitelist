@@ -1,3 +1,11 @@
+"""
+necessary libs
+pycord 
+python3
+written by wender10002
+this cods have slashcommands is very necessary dowload the pycord lib and not the discord.py, is libs different. Use for code review!
+"""
+
 import discord
 from discord.ext import commands
 
