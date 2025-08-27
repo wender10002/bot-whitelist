@@ -4,6 +4,7 @@ pycord
 python3
 written by wender10002
 this cods have slashcommands is very necessary dowload the pycord lib and not the discord.py, is libs different. Use for code review!
+you can chance commands names to your preference names!
 """
 
 import discord
@@ -28,7 +29,7 @@ async def ping(ctx, latencia: int):
 @bot.slash_command(name="blacklistar", description="blacklistar um usuário.")
 async def blacklist(ctx, termo=discord.Option(str, description="username do usuário"),
              imagem=discord.Option(discord.Attachment, description="Imagem do ID do usuário"),
-             guild_id=[1392972390689935493]
+             guild_id=[] # your server id to fast up to date
              ):
     await ctx.defer()
     destino_id = 1392986682600718497
@@ -89,4 +90,4 @@ async def buscar(ctx, termo: str,):
 
     await ctx.respond("Nenhum usuário encontrado com esse termo nos canais especificados.")
 
-bot.run("bot token")
+bot.run("") # token of your bot
